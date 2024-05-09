@@ -14,8 +14,7 @@ NodeJS 18.12
 Congratulations! You just got hired to your first unicorn startup company.  
 Your new company just finished developing the latest feature called "Your average form".  
 ![Your average form image](public/webpage.jpg)  
-Your task is to to cover "Your average form" with automated tests using [Cypress.io](https://cypress.io),  
-or any other testing framework of your choice.  
+Your task is to to cover "Your average form" with automated tests using [Cypress.io](https://cypress.io).  
 Here's a general TODO list:
 - explore "Your average form" webpage
 - create testing scenarios
