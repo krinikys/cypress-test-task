@@ -68,73 +68,73 @@
 
 <body>
   <div class="container">
-    <h1 class="text-center">Your average form</h1>
+    <h1 class="text-center" data-cy="formName">Your average form</h1>
     <form id="average-form" action="/submit" method="post">
       <div class="form-group">
-        <label for="username">Username:</label>
-        <input type="text" class="form-control" id="username" name="username" required>
+        <label for="username" data-cy="userName">Username:</label>
+        <input type="text" class="form-control" id="username" name="username" required data-cy="usernameField">
       </div>
       <div class="form-group">
-        <label for="password">Password:</label>
-        <input type="password" class="form-control" id="password" required>
+        <label for="password" data-cy="passWord">Password:</label>
+        <input type="password" class="form-control" id="password" required data-cy="passwordField">
       </div>
       <div class="form-group">
-        <label for="gender">Gender:</label><br>
+        <label for="gend                  er" data-cy="gender">Gender:</label><br>
         <div class="form-check form-check-inline">
-          <input type="radio" class="form-check-input" id="genderMale" name="gender" value="Male" required>
-          <label class="form-check-label" for="genderMale">Male</label>
+          <input type="radio" class="form-check-input" id="genderMale" name="gender" value="Male" required data-cy="genderMale">
+          <label class="form-check-label" for="genderMale" data-cy="Male">Male</label>
         </div>
         <div class="form-check form-check-inline">
-          <input type="radio" class="form-check-input" id="genderFemale" name="gender" value="Female" required>
-          <label class="form-check-label" for="genderFemale">Female</label>
+          <input type="radio" class="form-check-input" id="genderFemale" name="gender" value="Female" required data-cy="genderFemale">
+          <label class="form-check-label" for="genderFemale" data-cy="Female">Female</label>
         </div>
       </div>
       <div class="form-group">
-        <label>Hobbies:</label><br>
+        <label data-cy="hobbies">Hobbies:</label><br>
         <table class="table">
           <thead>
             <tr>
-              <th scope="col">Hobby</th>
-              <th scope="col">Select</th>
+              <th scope="col" data-cy="hobby">Hobby</th>
+              <th scope="col" data-cy="select">Select</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Reading</td>
+              <td data-cy="reading">Reading</td>
               <td>
-                <input type="checkbox" class="form-check-input" name="hobby" value="Reading">
+                <input type="checkbox" class="form-check-input" name="hobby" value="Reading" data-cy="readingCheckbox">
               </td>
             </tr>
             <tr>
-              <td>Sports</td>
+              <td data-cy="sports">Sports</td>
               <td>
-                <input type="checkbox" class="form-check-input" name="hobby" value="Sports">
+                <input type="checkbox" class="form-check-input" name="hobby" value="Sports" data-cy="sportsCheckbox">
               </td>
             </tr>
             <tr>
-              <td>Music</td>
+              <td data-cy="music">Music</td>
               <td>
-                <input type="checkbox" class="form-check-input" name="hobby" value="Music">
+                <input type="checkbox" class="form-check-input" name="hobby" value="Music" data-cy="musicCheckbox">
               </td>
             </tr>
           </tbody>
         </table>
       </div>
       <div class="form-group">
-        <label for="time">Time:</label>
-        <select class="form-control" id="time" name="time" required>
-          <option value="">Select a time</option>
-          <option value="Morning">Morning</option>
-          <option value="Noon">Noon</option>
-          <option value="Evening">Evening</option>
+        <label for="time" data-cy="time">Time:</label>
+        <select class="form-control" id="time" name="time" required data-cy="timeDropdown">
+          <option value="" data-cy="selectTime">Select a time</option>
+          <option value="Morning" data-cy="morning">Morning</option>
+          <option value="Noon" data-cy="noon">Noon</option>
+          <option value="Evening" data-cy="evening">Evening</option>
         </select>
       </div>
       <div class="form-group text-center">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" data-cy="submitButton">Submit</button>
       </div>
     </form>
     <div id="loading" class="overlay d-none">
-      <span class="loading-animation"></span>
+      <span class="loading-animation" data-cy="loading"></span>
     </div>
   </div>
 
